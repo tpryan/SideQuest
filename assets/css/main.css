@@ -1,1 +1,9 @@
-main.css
+html {
+  text-rendering: optimizeLegibility; }
+
+body {
+  font-family: "jaf-bernino-sans-narrow";
+  font-weight: normal; }
+
+h1 {
+  font-family: "jaf-herb"; }
