@@ -42,16 +42,139 @@ header {
     display: table-cell;
     padding-right: 2rem; }
     header hgroup h1 {
-      font-family: "jaf-herb";
       font-size: 5rem;
       padding-bottom: 1rem; }
+    header hgroup h2 {
+      font-size: 2rem; }
   header nav {
     vertical-align: top;
     display: table-cell; }
+    header nav ul {
+      padding-bottom: 0rem; }
+      header nav ul li {
+        padding: .2rem; }
+
+p {
+  font-size: 1.7rem;
+  line-height: 1.4;
+  margin-bottom: 2rem; }
 
 h2 {
   font-size: 3rem;
   padding-bottom: 1rem; }
 
+ul {
+  padding-bottom: 2rem; }
+
+li {
+  list-style: none;
+  font-size: 1.7rem;
+  margin-bottom: .8rem;
+  line-height: 1.2;
+  padding-left: 3rem; }
+
+ul li:before {
+  content: "\00BB \0020"; }
+
+section {
+  min-height: 30rem;
+  padding-bottom: 10rem; }
+
 footer {
   padding: 2rem 0; }
+
+input, textarea, select, button {
+  border: 1px solid #555555;
+  padding: 0.5rem;
+  font-size: 15px;
+  line-height: 1.2rem;
+  width: 80%;
+  background: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #cccccc));
+  background-image: -webkit-linear-gradient(top, white, #cccccc);
+  background-image: -moz-linear-gradient(top, white, #cccccc);
+  background-image: -ms-linear-gradient(top, white, #cccccc);
+  background-image: -o-linear-gradient(top, white, #cccccc);
+  background-image: linear-gradient(top, bottom, white, #cccccc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#cccccc');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#cccccc')";
+  -webkit-appearance: none;
+  -moz-box-shadow: 1px 1px 1px white;
+  -webkit-box-shadow: 1px 1px 1px white;
+  box-shadow: 1px 1px 1px white;
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=1px, OffY=1px, Color='#255255255');
+  -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1px, OffY=1px, Color='#255255255')";
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  vertical-align: top;
+  height: 1.25rem;
+  margin-bottom: 1rem; }
+
+input[type=checkbox], input[type=radio] {
+  display: inline-block;
+  line-height: 1rem;
+  margin: 0 0.25rem 0 0;
+  padding: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  vertical-align: text-top; }
+
+input[type=radio] {
+  -moz-border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  border-radius: 2rem;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; }
+
+input[type=submit], button {
+  width: auto;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  border-radius: 1rem;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 0.25rem 1rem;
+  line-height: 1.5rem;
+  font-size: 1.8rem;
+  height: 2.4rem;
+  vertical-align: top; }
+
+textarea {
+  height: 10rem; }
+
+#locationmap {
+  width: 60rem; }
+
+/*form{
+	input[type=email] {
+		-webkit-appearance:none;
+		width: 80%;
+		height: 50px;
+		font-size: 1.5rem;
+		vertical-align: top;
+		padding:0;
+		@include border-radius(8px);
+
+	}
+	button {
+		width: 15%;
+		height: 54px;
+		font-size: 1.8rem;
+		vertical-align: top;
+		padding:0;
+		@include border-radius(8px);
+
+	}
+}*/
