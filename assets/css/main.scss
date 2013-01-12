@@ -4,16 +4,23 @@
 body{
 	font-family: "jaf-bernino-sans-narrow";
 	font-weight: normal;
-	width: 60rem;
 	margin: 0 auto;
+	background-image: url('bg.png');
+	background-repeat: repeat;
 
 }
 
 
 
 
-header{
-	padding: 2rem 0;
+.content{
+	max-width: 60rem;
+	margin: 0 auto;
+}
+
+
+.pageheader{
+	padding: 0 0 2rem 0;
 
 	hgroup{
 		display: table-cell;
@@ -28,12 +35,40 @@ header{
 		}
 	}
 	nav{
+		padding: 0;
+		margin: 0;
 		vertical-align: top;
 		display: table-cell;
 		ul{
-			padding-bottom: 0rem;
+			padding: 0;
+			margin: 0;
 			li{
-				padding: .2rem;
+				line-height: 1;
+				padding: 0;
+				margin: 0;
+				&:before{
+					display:none;
+				}	
+				a{
+					display: block;
+					text-align: left;
+					width: 100%;
+					height: 100%;
+					background-color:#2f4234;
+					color: #FFFFFF;
+					border-bottom: .5rem solid #2f4234;
+					padding: .5rem 2rem;
+					margin: 0;
+					text-decoration: none;
+
+
+
+				}
+				a:hover{
+					background-color: #FFFFFF;
+					color: #88bc96;
+					border-bottom: .5rem solid #CCCCCC;
+				}
 			}
 		}
 	}
@@ -46,9 +81,14 @@ p{
 	margin-bottom: 2rem;
 }
 
+h1,h2{
+	font-weight: bold;
+}
+
 h2 {
 	font-size: 3rem;
 	padding-bottom: 1rem;
+	color: #2f4234;
 }
 
 ul{
@@ -69,8 +109,12 @@ ul li:before {
 	}
 
 section{
-	min-height: 30rem;
+	min-height: 10rem;
+	padding: 1rem;
 	padding-bottom: 10rem;
+	background-color: #FFF;
+	
+	@include border-radius(0.25rem); 
 }
 footer{
 	padding: 2rem 0;
@@ -126,24 +170,68 @@ input[type=checkbox], input[type=radio] {
 	width: 60rem;
 }
 
-/*form{
-	input[type=email] {
-		-webkit-appearance:none;
-		width: 80%;
-		height: 50px;
+#logo{
+	width: 35rem;
+	margin-top: -1rem;
+	-webkit-filter:drop-shadow(5px 5px 8px rgba(0, 0, 0, .6));
+}
+
+#attend{
+	background-color: #2f4234;
+
+	h2{
+		color: #FFF;
+	}
+}
+
+#schedule, #about{
+	background: none;
+}
+
+#location{
+	background-color: #88bc96;
+
+	h2{
+		color: #FFF;
+	}
+}
+
+section#agenda{
+	background: none;
+	padding: 0;
+	article{
+		padding-bottom: 3rem;
+	}
+	h1{
+		font-size: 2rem;
+		padding-bottom: 1rem;
+	}
+	h2{
 		font-size: 1.5rem;
-		vertical-align: top;
-		padding:0;
-		@include border-radius(8px);
-
 	}
-	button {
-		width: 15%;
-		height: 54px;
-		font-size: 1.8rem;
+	time{
+		font-size: 4rem;
+		font-weight: bold;
+		letter-spacing: -.4rem;
+		width: 22rem;
+		display: inline-block;
 		vertical-align: top;
-		padding:0;
-		@include border-radius(8px);
-
 	}
-}*/
+	header{
+		display: inline-block;
+		width: 37rem;
+	}
+
+	a{
+		text-decoration: none;
+	}
+	a:link{
+		color: #88bc96;
+	}
+	a:visited{
+		color:#63846b;
+	}
+	a:hover,a:active{
+		color: #2f4234;
+	}
+}

@@ -8,198 +8,226 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head> 
 <body>
-	<header>
-		<hgroup>
-			<h1><a href="/">SideQuest</a></h1>
-			<h2>Progress isn't always a straight line</h2>
-			<h3 id="location">Philadelphia, PA</h3>
-			<h3 id="date"><time>May 6, 2013</time></h3>
-		</hgroup>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#attend">Attend</a></li>
-				<li><a href="#speak">Speak</a></li>
-				<li><a href="#schedule">Schedule</a></li>
-				<li><a href="#location">Location</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>	
-		</nav>
+	<header class="pageheader">
+		<div class="content">
+
+			<hgroup>
+				<h1><a href="/"><img id="logo" src="assets/img/logo.svg"></a></h1>
+				<h2>Progress isn't always a straight line</h2>
+				<h3 id="locationbanner">Philadelphia, PA</h3>
+				<h3 id="date"><time>May 6, 2013</time></h3>
+			</hgroup>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#attend">Attend</a></li>
+					<li><a href="#speak">Speak</a></li>
+					<li><a href="#schedule">Schedule</a></li>
+					<li><a href="#location">Location</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>	
+			</nav>
+		</div>
 	</header>
 
 	
 	<section id="about">
-		<h2>About</h2>
-		<p>SideQuest is a conference to level up web workers.</p> 
+		<div class="content">
+			<p>SideQuest is a conference to level up web workers.</p> 
 
-		<p>Often we make the most progress in our skills, jobs, or careers when we are learning things
-			outside our main focus area. After you've attended enough conferences, read enough books, 
-			followed enough tutorials, just learning a new language doesn't do it for you.</p>
-		<p>That's why there's SideQuest, a conference dedicated to helping you advance yourself in a non obvious way.</p> 
-		<ul>
-			<li>Perhaps learning public speaking could help your career, so <a href="">Technical Presentations That 
-		Don't Suck</a> could help you.</li>
-			<li>The rise of Responsive Web Design has made <a href="">SVG</a> a hot topic these days, learning <a href="">How to Draw SVG Graphics with Illustrator</a> might be a career saver. </li>
-			<li>Perhaps you need some advice in going at it along that you could get from <a href="">I Started a Video 
-				Game Music Studio in Philadelphia Because I Didn't Want to Move</a> could inspire you. </li>  
-		</ul>
+			<p>Often we make the most progress in our skills, jobs, or careers when we are learning things
+				outside our main focus area. After you've attended enough conferences, read enough books, 
+				followed enough tutorials, just learning a new language doesn't do it for you.</p>
+			<p>That's why there's SideQuest, a conference dedicated to helping you advance yourself in a non obvious way.</p> 
+			<ul>
+				<li>Perhaps learning public speaking could help your career, so <a href="">Technical Presentations That 
+			Don't Suck</a> could help you.</li>
+				<li>The rise of Responsive Web Design has made <a href="">SVG</a> a hot topic these days, learning <a href="">How to Draw SVG Graphics with Illustrator</a> might be a career saver. </li>
+				<li>Perhaps you need some advice in going at it along that you could get from <a href="">I Started a Video 
+					Game Music Studio in Philadelphia Because I Didn't Want to Move</a> could inspire you. </li>  
+			</ul>
 
 
 
-		<p>All topics will be spoken by developers but will not necessarily be directly about 
-			development, with a focus on other skills you can harness to drive 
-			your development career forward. </p>
+			<p>All topics will be spoken by developers but will not necessarily be directly about 
+				development, with a focus on other skills you can harness to drive 
+				your development career forward. </p>
+		</div>	
 	</section>
 	<section id="attend">
-		<h2>Attend</h2>
-		<p>We're not taking registrations yet, but if you sign up here, 
-			we'll notify you as soon as we open registration.</p>
-		<form>
-			<input type="email" name="notifywhenopen" placeholder="Your email address">
-			<button id="notifywhenopensubmit">Go!</button>
-		</form>	
+		<div class="content">
+			<h2>Attend</h2>
+			<p>We're not taking registrations yet, but if you sign up here, 
+				we'll notify you as soon as we open registration.</p>
+			<form>
+				<input type="email" name="notifywhenopen" placeholder="Your email address">
+				<button id="notifywhenopensubmit">Go!</button>
+			</form>
+		</div>		
 	</section>
 	<section id="speak">
-		<h2>Speak</h2>
-		<p>Have an idea for a talk? Have something to share? Drop us a line with what you are thinking.
-			We're looking for several 50 minute talks.</p>
-		<form>
-			<input type="text" name="speak-name"  placeholder="Name" />
-			<input type="email" name="speak-email" placeholder="Your email address">
-			<input type="text" name="speak-title"  placeholder="Title" />
-			<textarea name="speak-desc" placeholder="A desciption of your proposed talk"></textarea>
-			<button id="speaksubmit">Go!</button>
-		</form>
+		<div class="content">
+			<h2>Speak</h2>
+			<p>Have an idea for a talk? Have something to share? Drop us a line with what you are thinking.
+				We're looking for several 50 minute talks.</p>
+			<form>
+				<input type="text" name="speak-name"  placeholder="Name" />
+				<input type="email" name="speak-email" placeholder="Your email address">
+				<input type="text" name="speak-title"  placeholder="Title" />
+				<textarea name="speak-desc" placeholder="A desciption of your proposed talk"></textarea>
+				<button id="speaksubmit">Go!</button>
+			</form>
+		</div>	
 	</section>
 	<section id="schedule">
-		<h2>Schedule</h2>
-		<section id="agenda">
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">Keynote</a></h1>
-						<h2><a href="">Avish Parashar</a></h2>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 09:00Z-05:00">9:00 - 9:55</time>
-			</article>	
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">How to Draw SVG Graphics with Illustrator</a></h1>
-						<h2><a href="">Paul Trani</a></h2>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 10:00Z-05:00">10:00 - 10:55</time>
-			</article>
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">Break</a></h1>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 10:55Z-05:00">10:55 - 11:10</time>
-			</article>
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">I Started a Video 
-				Game Music Studio in Philadelphia Because I Didn't Want to Move</a></h1>
-						<h2><a href="">Mike Worth</a></h2>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 09:00Z-05:00">11:10 - 12:05</time>
-			</article>
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">TBA</a></h1>
-						<h2><a href="">TBA</a></h2>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 12:10:00Z-05:00">12:10 - 1:05</time>
-			</article>
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">Lunch</a></h1>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 13:055Z-05:00">1:05 - 2:30</time>
-			</article>
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">TBA</a></h1>
-						<h2><a href="">TBA</a></h2>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 1210:00Z-05:00">2:30 - 3:25</time>
-			</article>
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">TBA</a></h1>
-						<h2><a href="">TBA</a></h2>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 1210:00Z-05:00">3:30 - 4:25</time>
-			</article>
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">Break</a></h1>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 10:55Z-05:00">4:25 - 4:40</time>
-			</article>
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">TBA</a></h1>
-						<h2><a href="">TBA</a></h2>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 1210:00Z-05:00">4:40 - 5:35</time>
-			</article>
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">Closing</a></h1>
-						<h2><a href="">TBA</a></h2>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 1210:00Z-05:00">5:35 - 6:00</time>
-			</article>
-			<article>
-				<header>
-					<hgroup>
-						<h1><a href="">After Party</a></h1>
-						<h2><a href="">TBA</a></h2>
-					</hgroup>
-				</header>
-				<time datetime="2013-05-06 1210:00Z-05:00">6:00 - 8:00</time>
-			</article>
+		<div class="content">
+			<h2>Schedule</h2>
+			<section id="agenda">
+				<article class="session">
+					<time datetime="2013-05-06 09:00Z-05:00">9:00 - 9:55</time>
+					<header>
+						<hgroup>
+							<h1><a href="">Keynote</a></h1>
+							<h2><a href="">Avish Parashar</a></h2>
+						</hgroup>
+					</header>
+					
+				</article>	
+				<article class="session">
+					<time datetime="2013-05-06 10:00Z-05:00">10:00 - 10:55</time>
+					<header>
+						<hgroup>
+							<h1><a href="">How to Draw SVG Graphics with Illustrator</a></h1>
+							<h2><a href="">Paul Trani</a></h2>
+						</hgroup>
+					</header>
+					
+				</article>
+				<article class="break">
+					<time datetime="2013-05-06 10:55Z-05:00">10:55 - 11:10</time>
+					<header>
+						<hgroup>
+							<h1><a href="">Break</a></h1>
+						</hgroup>
+					</header>
+					
+				</article>
+				<article class="session">
+					<time datetime="2013-05-06 09:00Z-05:00">11:10 - 12:05</time>
+					<header>
+						<hgroup>
+							<h1><a href="">I Started a Video 
+					Game Music Studio in Philadelphia Because I Didn't Want to Move</a></h1>
+							<h2><a href="">Mike Worth</a></h2>
+						</hgroup>
+					</header>
+					
+				</article>
+				<article class="session">
+					<time datetime="2013-05-06 12:10:00Z-05:00">12:10 - 1:05</time>
+					<header>
+						<hgroup>
+							<h1><a href="">TBA</a></h1>
+							<h2><a href="">TBA</a></h2>
+						</hgroup>
+					</header>
+					
+				</article>
+				<article class="break">
+					<time datetime="2013-05-06 13:055Z-05:00">1:05 - 2:30</time>
+					<header>
+						<hgroup>
+							<h1><a href="">Lunch</a></h1>
+						</hgroup>
+					</header>
+					
+				</article>
+				<article class="session">
+					<time datetime="2013-05-06 1210:00Z-05:00">2:30 - 3:25</time>
+					<header>
+						<hgroup>
+							<h1><a href="">TBA</a></h1>
+							<h2><a href="">TBA</a></h2>
+						</hgroup>
+					</header>
+					
+				</article>
+				<article class="session">
+					<time datetime="2013-05-06 1210:00Z-05:00">3:30 - 4:25</time>
+					<header>
+						<hgroup>
+							<h1><a href="">TBA</a></h1>
+							<h2><a href="">TBA</a></h2>
+						</hgroup>
+					</header>
+					
+				</article>
+				<article class="break">
+					<time datetime="2013-05-06 10:55Z-05:00">4:25 - 4:40</time>
+					<header>
+						<hgroup>
+							<h1><a href="">Break</a></h1>
+						</hgroup>
+					</header>
+					
+				</article>
+				<article class="session">
+					<time datetime="2013-05-06 1210:00Z-05:00">4:40 - 5:35</time>
+					<header>
+						<hgroup>
+							<h1><a href="">TBA</a></h1>
+							<h2><a href="">TBA</a></h2>
+						</hgroup>
+					</header>
+					
+				</article>
+				<article class="session">
+					<time datetime="2013-05-06 1210:00Z-05:00">5:35 - 6:00</time>
+					<header>
+						<hgroup>
+							<h1><a href="">Closing</a></h1>
+							<h2><a href="">TBA</a></h2>
+						</hgroup>
+					</header>
+					
+				</article>
+				<article class="break">
+					<time datetime="2013-05-06 1210:00Z-05:00">6:00 - 8:00</time>
+					<header>
+						<hgroup>
+							<h1><a href="">After Party</a></h1>
+						</hgroup>
+					</header>
+					
+				</article>
 
-		</section>	
+			</section>
+		</div>		
 	</section>
 	<section id="location">
-		<h2>Location</h2>
-		<p>We will hold Side Quest in a parking lot close to the Schuylkill river, in Philadelphia, PA.</p>
-		<iframe id="locationmap" width="500" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=&amp;sll=39.956711,-75.177126&amp;sspn=0.01653,0.026157&amp;ie=UTF8&amp;ll=39.957353,-75.176225&amp;spn=0.03306,0.052314&amp;t=m&amp;z=15&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=&amp;sll=39.956711,-75.177126&amp;sspn=0.01653,0.026157&amp;ie=UTF8&amp;ll=39.957353,-75.176225&amp;spn=0.03306,0.052314&amp;t=m&amp;z=15" style="color:#0000FF;text-align:left">View Larger Map</a></small>	
+		<div class="content">
+			<h2>Location</h2>
+			<p>We will hold Side Quest in a parking lot close to the Schuylkill river, in Philadelphia, PA.</p>
+			<iframe id="locationmap" width="500" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=&amp;sll=39.956711,-75.177126&amp;sspn=0.01653,0.026157&amp;ie=UTF8&amp;ll=39.957353,-75.176225&amp;spn=0.03306,0.052314&amp;t=m&amp;z=15&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=&amp;sll=39.956711,-75.177126&amp;sspn=0.01653,0.026157&amp;ie=UTF8&amp;ll=39.957353,-75.176225&amp;spn=0.03306,0.052314&amp;t=m&amp;z=15" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+		</div>		
 	</section>
 	<section id="contact">
+		<div class="content">
 		<h2>Contact</h2>
-		<form>
-			<input type="text" name="contact-name"  placeholder="Name" />
-			<input type="email" name="contact-email" placeholder="Your email address">
-			<textarea name="contact-content" placeholder="Say what you wanna say"></textarea>
-			<button id="contactsubmit">Go!</button>
-		</form>
+			<p>Have a question, comment or addedumn? Let me know.</p>
+			<form>
+				<input type="text" name="contact-name"  placeholder="Name" />
+				<input type="email" name="contact-email" placeholder="Your email address">
+				<textarea name="contact-content" placeholder="Say what you wanna say"></textarea>
+				<button id="contactsubmit">Go!</button>
+			</form>
+		</div>
 	</section>	
 	<footer>
-		<p>Copyright 2012 Terrence Ryan</p>
-		<small><em>This is not a real conference. This is just an HTML playground demo.</em></small>	
+		<div class="content">
+			<p>Copyright 2012 Terrence Ryan</p>
+			<small><em>This is not a real conference. This is just an HTML playground demo.</em></small>	
+		</div>
 	</footer>		
 </body>
 </html>

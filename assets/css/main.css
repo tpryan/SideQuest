@@ -33,35 +33,66 @@ table {
 body {
   font-family: "jaf-bernino-sans-narrow";
   font-weight: normal;
-  width: 60rem;
+  margin: 0 auto;
+  background-image: url("bg.png");
+  background-repeat: repeat; }
+
+.content {
+  max-width: 60rem;
   margin: 0 auto; }
 
-header {
-  padding: 2rem 0; }
-  header hgroup {
+.pageheader {
+  padding: 0 0 2rem 0; }
+  .pageheader hgroup {
     display: table-cell;
     padding-right: 2rem; }
-    header hgroup h1 {
+    .pageheader hgroup h1 {
       font-size: 5rem;
       padding-bottom: 1rem; }
-    header hgroup h2 {
+    .pageheader hgroup h2 {
       font-size: 2rem; }
-  header nav {
+  .pageheader nav {
+    padding: 0;
+    margin: 0;
     vertical-align: top;
     display: table-cell; }
-    header nav ul {
-      padding-bottom: 0rem; }
-      header nav ul li {
-        padding: .2rem; }
+    .pageheader nav ul {
+      padding: 0;
+      margin: 0; }
+      .pageheader nav ul li {
+        line-height: 1;
+        padding: 0;
+        margin: 0; }
+        .pageheader nav ul li:before {
+          display: none; }
+        .pageheader nav ul li a {
+          display: block;
+          text-align: left;
+          width: 100%;
+          height: 100%;
+          background-color: #2f4234;
+          color: #FFFFFF;
+          border-bottom: 0.5rem solid #2f4234;
+          padding: 0.5rem 2rem;
+          margin: 0;
+          text-decoration: none; }
+        .pageheader nav ul li a:hover {
+          background-color: #FFFFFF;
+          color: #88bc96;
+          border-bottom: 0.5rem solid #cccccc; }
 
 p {
   font-size: 1.7rem;
   line-height: 1.4;
   margin-bottom: 2rem; }
 
+h1, h2 {
+  font-weight: bold; }
+
 h2 {
   font-size: 3rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  color: #2f4234; }
 
 ul {
   padding-bottom: 2rem; }
@@ -77,8 +108,16 @@ ul li:before {
   content: "\00BB \0020"; }
 
 section {
-  min-height: 30rem;
-  padding-bottom: 10rem; }
+  min-height: 10rem;
+  padding: 1rem;
+  padding-bottom: 10rem;
+  background-color: #FFF;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; }
 
 footer {
   padding: 2rem 0; }
@@ -157,24 +196,49 @@ textarea {
 #locationmap {
   width: 60rem; }
 
-/*form{
-	input[type=email] {
-		-webkit-appearance:none;
-		width: 80%;
-		height: 50px;
-		font-size: 1.5rem;
-		vertical-align: top;
-		padding:0;
-		@include border-radius(8px);
+#logo {
+  width: 35rem;
+  margin-top: -1rem;
+  -webkit-filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.6)); }
 
-	}
-	button {
-		width: 15%;
-		height: 54px;
-		font-size: 1.8rem;
-		vertical-align: top;
-		padding:0;
-		@include border-radius(8px);
+#attend {
+  background-color: #2f4234; }
+  #attend h2 {
+    color: #FFF; }
 
-	}
-}*/
+#schedule, #about {
+  background: none; }
+
+#location {
+  background-color: #88bc96; }
+  #location h2 {
+    color: #FFF; }
+
+section#agenda {
+  background: none;
+  padding: 0; }
+  section#agenda article {
+    padding-bottom: 3rem; }
+  section#agenda h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem; }
+  section#agenda h2 {
+    font-size: 1.5rem; }
+  section#agenda time {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: -.4rem;
+    width: 22rem;
+    display: inline-block;
+    vertical-align: top; }
+  section#agenda header {
+    display: inline-block;
+    width: 37rem; }
+  section#agenda a {
+    text-decoration: none; }
+  section#agenda a:link {
+    color: #88bc96; }
+  section#agenda a:visited {
+    color: #63846b; }
+  section#agenda a:hover, section#agenda a:active {
+    color: #2f4234; }
