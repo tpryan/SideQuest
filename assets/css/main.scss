@@ -1,12 +1,12 @@
 @import 'all';
 @import 'meyer-reset';
+@import 'settings';
+@import 'general_foundicons';
 
 body{
-	font-family: "jaf-bernino-sans-narrow";
-	font-weight: normal;
+	font-family: "jaf-bernino-sans";
+	font-weight: 300;
 	margin: 0 auto;
-	background-image: url('bg.png');
-	background-repeat: repeat;
 
 }
 
@@ -20,18 +20,39 @@ body{
 
 
 .pageheader{
-	padding: 0 0 2rem 0;
+	padding: 0 0 0 0;
+	background-color: #FFF;
 
 	hgroup{
 		display: table-cell;
 		padding-right: 0rem;
+		position: relative;
+		padding-bottom: 0;
+
+		.dateloc{
+			padding: 0 0 0 1rem;
+			text-align: right;
+			display: block;
+			position: relative;
+			left: 35rem;
+			top: 0;
+			
+			margin-top: -4rem;
+		}
 
 		h1 {
 		  font-size: 5rem;
 		  padding-bottom: 1rem;
 		}
 		h2{
-			font-size: 2rem;
+			font-size: 1.5rem;
+			font-weight: 800;
+			letter-spacing: -0.125rem;
+			display: inline; 
+			margin-left: 2rem;
+			margin-bottom: -20rem;
+			font-family: "jaf-bernino-sans";
+			text-shadow: #999 0 0 1px;
 		}
 	}
 	nav{
@@ -41,11 +62,13 @@ body{
 		display: table-cell;
 		width: 35rem;
 		ul{
+			text-align: right;
 			padding: 0;
 			margin: 0;
 			li{
 				font-family: "jaf-herb-condensed";
-				font-size: 2.3rem;
+				font-weight: 300;
+				font-size: 3rem;
 				
 				line-height: 1;
 				display: inline-block;
@@ -56,28 +79,45 @@ body{
 					display:none;
 				}
 				a{
+					width: 8rem;
 					color: #8A7455;
 					text-align: center;
 					display: inline-block;
-					padding: 3rem 1.5rem 7rem 1.5rem;
+					padding: 2rem 1.5rem 8rem 1.5rem;
 					text-decoration: none;
 					margin:0;
-					text-shadow: #E6D2FE 0 0 3px;
+					text-shadow: #8A8A8A 0 0 1px;
 				}
 				a:hover{
-					background-color: #E6D2FE;
 					color: #6F614C;
+					text-shadow: #6F6F6F 0 0 1px;
+					
+					span{
+						border-bottom: 5px solid #6F614C;
+					}
 				}
 
 				a.current{
 					background: none;
+
 					color: #34553E;
 					background-image: url("navflag.svg");
 					background-size: contain;
 					background-repeat: no-repeat;
 					background-position: center -20px;
 					-webkit-filter:drop-shadow(3px 3px 6px rgba(0, 0, 0, .6));
-					text-shadow: #222222 0 0 4px;;
+					text-shadow: #222222 0 0 4px;
+
+					&:hover{
+						span{
+							border-bottom: none;
+						}
+					};
+
+				}
+				i{
+					display: block;
+					text-decoration: none;
 				}	
 				
 			}
@@ -100,6 +140,9 @@ h2 {
 	font-size: 3rem;
 	padding-bottom: 1rem;
 	color: #72697E;
+	font-family: "jaf-herb-condensed";
+	font-weight: normal;
+	text-shadow: #222222 0 0 2px;
 }
 
 ul{
@@ -188,22 +231,57 @@ input[type=checkbox], input[type=radio] {
 
 #attend{
 	background-color: #2f4234;
+	@include linear-gradient(rgba(200,200,200,.2), rgba(200,200,200,0), 1);
+	background-size: 10%;
+	background-repeat: repeat-x;
 
 	h2{
 		color: #FFF;
+		text-shadow: #000000 0 0 2px;
 	}
 }
 
-#schedule, #about{
+#schedule{
 	background: none;
 }
 
 #location{
 	background-color: #88bc96;
+	@include linear-gradient(rgba(200,200,200,.7), rgba(200,200,200,0), 1);
+	background-size: 10%;
+	background-repeat: repeat-x;
 
 	h2{
 		color: #FFF;
 	}
+}
+
+#speak{
+	background-color: #72697E;
+	@include linear-gradient(rgba(200,200,200,.3), rgba(200,200,200,0), 1);
+	background-size: 10%;
+	background-repeat: repeat-x;
+
+	h2{
+		color: #FFF;
+	}
+}
+
+#schedule{
+	background-color: #88bc96;
+	@include linear-gradient(rgba(200,200,200,.7), rgba(200,200,200,0), 1);
+	background-size: 10%;
+	background-repeat: repeat-x;
+
+	h2{
+		color: #FFF;
+	}
+}
+
+#contact{
+	@include linear-gradient(rgba(136, 188, 150, .5), rgba(136, 188, 150, 0), 1);
+	background-size: 8%;
+	background-repeat: repeat-x;
 }
 
 section#agenda{
