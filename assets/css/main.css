@@ -482,16 +482,57 @@ textarea {
   background-size: 8%;
   background-repeat: repeat-x; }
 
+body.attend footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(136, 188, 150, 0.5)), color-stop(1, rgba(136, 188, 150, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(136, 188, 150, 0.5), rgba(136, 188, 150, 0));
+  background-image: -moz-linear-gradient(top, rgba(136, 188, 150, 0.5), rgba(136, 188, 150, 0));
+  background-image: -ms-linear-gradient(top, rgba(136, 188, 150, 0.5), rgba(136, 188, 150, 0));
+  background-image: -o-linear-gradient(top, rgba(136, 188, 150, 0.5), rgba(136, 188, 150, 0));
+  background-image: linear-gradient(top, bottom, rgba(136, 188, 150, 0.5), rgba(136, 188, 150, 0));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(136, 188, 150, 0.5)', endColorstr='rgba(136, 188, 150, 0)');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(136, 188, 150, 0.5)', endColorstr='rgba(136, 188, 150, 0)')";
+  background-size: 30%;
+  background-repeat: repeat-x; }
+
+body.speak footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(114, 105, 126, 0.5)), color-stop(1, rgba(114, 105, 126, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(114, 105, 126, 0.5), rgba(114, 105, 126, 0));
+  background-image: -moz-linear-gradient(top, rgba(114, 105, 126, 0.5), rgba(114, 105, 126, 0));
+  background-image: -ms-linear-gradient(top, rgba(114, 105, 126, 0.5), rgba(114, 105, 126, 0));
+  background-image: -o-linear-gradient(top, rgba(114, 105, 126, 0.5), rgba(114, 105, 126, 0));
+  background-image: linear-gradient(top, bottom, rgba(114, 105, 126, 0.5), rgba(114, 105, 126, 0));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(114, 105, 126, 0.5)', endColorstr='rgba(114, 105, 126, 0)');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(114, 105, 126, 0.5)', endColorstr='rgba(114, 105, 126, 0)')";
+  background-size: 30%;
+  background-repeat: repeat-x; }
+
+body.schedule footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(136, 188, 150, 0.5)), color-stop(1, rgba(136, 188, 150, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(136, 188, 150, 0.5), rgba(136, 188, 150, 0));
+  background-image: -moz-linear-gradient(top, rgba(136, 188, 150, 0.5), rgba(136, 188, 150, 0));
+  background-image: -ms-linear-gradient(top, rgba(136, 188, 150, 0.5), rgba(136, 188, 150, 0));
+  background-image: -o-linear-gradient(top, rgba(136, 188, 150, 0.5), rgba(136, 188, 150, 0));
+  background-image: linear-gradient(top, bottom, rgba(136, 188, 150, 0.5), rgba(136, 188, 150, 0));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(136, 188, 150, 0.5)', endColorstr='rgba(136, 188, 150, 0)');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(136, 188, 150, 0.5)', endColorstr='rgba(136, 188, 150, 0)')";
+  background-size: 30%;
+  background-repeat: repeat-x; }
+
 section#agenda {
   background: none;
   padding: 0; }
   section#agenda article {
     padding-bottom: 3rem; }
   section#agenda h1 {
-    font-size: 2rem;
-    padding-bottom: 1rem; }
+    margin-top: .5rem;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    font-family: "jaf-bernino-sans";
+    font-weight: 800; }
   section#agenda h2 {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-family: "jaf-bernino-sans";
+    font-weight: 300; }
   section#agenda time {
     font-size: 4rem;
     font-weight: bold;
@@ -505,8 +546,12 @@ section#agenda {
   section#agenda a {
     text-decoration: none; }
   section#agenda a:link {
-    color: #88bc96; }
+    color: #6F614C;
+    text-shadow: #6f6f6f 0 0 1px; }
   section#agenda a:visited {
-    color: #63846b; }
+    color: #6F614C;
+    text-shadow: #6f6f6f 0 0 1px; }
   section#agenda a:hover, section#agenda a:active {
-    color: #2f4234; }
+    color: #8A7455;
+    text-shadow: #8a8a8a 0 0 1px;
+    text-decoration: underline; }

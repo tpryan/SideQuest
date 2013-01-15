@@ -284,6 +284,30 @@ input[type=checkbox], input[type=radio] {
 	background-repeat: repeat-x;
 }
 
+body.attend{
+	footer{
+		@include linear-gradient(rgba(136, 188, 150, .5), rgba(136, 188, 150, 0), 1);
+		background-size: 30%;
+		background-repeat: repeat-x;
+	}
+}
+
+body.speak{
+	footer{
+		@include linear-gradient(rgba(114, 105, 126, .5), rgba(114, 105, 126, 0), 1);
+		background-size: 30%;
+		background-repeat: repeat-x;
+	}
+}
+
+body.schedule{
+	footer{
+		@include linear-gradient(rgba(136, 188, 150, .5), rgba(136, 188, 150, 0), 1);
+		background-size: 30%;
+		background-repeat: repeat-x;
+	}
+}
+
 section#agenda{
 	background: none;
 	padding: 0;
@@ -291,11 +315,16 @@ section#agenda{
 		padding-bottom: 3rem;
 	}
 	h1{
-		font-size: 2rem;
+		margin-top: .5rem;
+		font-size: 2.5rem;
 		padding-bottom: 1rem;
+		font-family: "jaf-bernino-sans";
+		font-weight: 800;
 	}
 	h2{
 		font-size: 1.5rem;
+		font-family: "jaf-bernino-sans";
+		font-weight: 300;
 	}
 	time{
 		font-size: 4rem;
@@ -310,16 +339,22 @@ section#agenda{
 		width: 37rem;
 	}
 
+
 	a{
 		text-decoration: none;
 	}
 	a:link{
-		color: #88bc96;
+		color: #6F614C;
+		text-shadow: #6F6F6F 0 0 1px;
 	}
 	a:visited{
-		color:#63846b;
+		color: #6F614C;
+		text-shadow: #6F6F6F 0 0 1px;
 	}
 	a:hover,a:active{
-		color: #2f4234;
+		color: #8A7455;
+		text-shadow: #8A8A8A 0 0 1px;
+		text-decoration: underline;
+		
 	}
 }
