@@ -324,13 +324,15 @@ textarea {
   background-image: url("map.jpg");
   background-position: left top; }
   .pageheader hgroup h2 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 800;
     text-shadow: #999999 0 0 1px;
     letter-spacing: -0.125rem;
     font-family: "jaf-bernino-sans";
     text-align: center;
-    margin-bottom: .5rem; }
+    margin-bottom: .5rem;
+    color: #000000;
+    text-shadow: #bbbbbb 0 0 3px; }
   .pageheader nav ul {
     border-bottom: 2px solid #222222;
     padding-bottom: 0; }
@@ -538,7 +540,7 @@ body.schedule footer {
     margin: 0 auto; }
 
   .content {
-    max-width: 60rem;
+    max-width: 55rem;
     margin: 0 auto; }
 
   .pageheader {
@@ -585,7 +587,7 @@ body.schedule footer {
         .pageheader nav ul li {
           font-family: "jaf-herb-condensed";
           font-weight: 300;
-          font-size: 3rem;
+          font-size: 2rem;
           line-height: 1;
           display: inline-block;
           padding: 0;
@@ -678,18 +680,18 @@ body.schedule footer {
     position: relative;
     max-height: 40rem; }
     .home .pageheader hgroup #logo {
-      width: 45rem; }
+      width: 40rem; }
     .home .pageheader hgroup .dateloc {
       padding: 0;
       display: block;
       z-index: 100;
       width: 20rem;
-      left: 42rem;
+      left: 38.5rem;
       top: -10rem; }
     .home .pageheader hgroup h2 {
       color: #333333;
       display: block;
-      width: 20rem;
+      width: 15rem;
       text-shadow: 0 0 1px #444444;
       font-size: 1.5rem;
       margin-bottom: 0; }
@@ -702,7 +704,7 @@ body.schedule footer {
       -webkit-filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.6));
       height: 48rem; }
       .home .pageheader nav ul {
-        width: 20rem;
+        width: 18rem;
         text-align: center;
         border: 1px solid blue;
         border: none;
